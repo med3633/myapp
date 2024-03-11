@@ -38,6 +38,6 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/ubuntu/Desktop/myapp/build/
+      device: /home/ubuntu/myapp/build/
       o: bind
  
