@@ -55,7 +55,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: 22
         script: |
-          cd ~/node_project/
+          cd ~/myapp/
           git pull origin main
           git status
           sudo docker-compose up --build -d
