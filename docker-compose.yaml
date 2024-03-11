@@ -5,7 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    container_name: nodeweb
+    container_name: react
     restart: unless-stopped
   webserver:
     image: nginx
@@ -38,6 +38,6 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: /home/ubuntu/node_project/views/
+      device: /home/ubuntu/Desktop/myapp/build/
       o: bind
  
